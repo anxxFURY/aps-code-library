@@ -15,7 +15,6 @@ using namespace std;
 void solve() {
     int n;
     cin >> n;
-
     vector<int> dp(pow(2,n),INT_MAX);
     dp[0] = 0;
     vector<vector<int>> arr;

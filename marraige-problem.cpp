@@ -14,8 +14,16 @@ using namespace std;
 using namespace std;
 
 void solve() {
-    int n,m;
-    cin >> m >> n;
+    int n; cin >> n;
+    vector<vector<pair<int,int>>> a;
+
+    for(int i = 0; i < n; i++) {
+        for(int j = 0; j < n; j++) {
+            cin >> a[i][j].first;
+            cin >> a[i][j].second;
+        }
+    }
+
 }
 int main() {
     // your code goes here
