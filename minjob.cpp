@@ -41,7 +41,7 @@ void solve() {
             r << 1;
         }
     }
-
+    
     cout << dp[pow(2,n) - 1] << endl;
 
 }
