@@ -67,7 +67,7 @@ public:
             }
             return;
         }
-        // last case has to be no overlap case
+        // last case has to be no overlap casei
         int mid = (low + high) >> 1;
         update(2*ind+1, low, mid, l, r, val);
         update(2*ind+2, mid+1, high, l, r, val);

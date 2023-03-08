@@ -34,11 +34,13 @@ struct Node {
          aa.a = ans;
          return aa;
      }
+
  	void build(int ind, int low, int high, int arr[]) {
  		if (low == high) {
  			seg[ind].a.push_back(arr[low]) ;
  			return;
  		}
+
  		int mid = (low + high) / 2;
  		build(2 * ind + 1, low, mid, arr);
  		build(2 * ind + 2, mid + 1, high, arr);
@@ -65,10 +67,12 @@ struct Node {
              seg[ind].a.push_back(val);
  			return;
  		}
+
  		int mid = (low + high) >> 1;
  		if (i <= mid) update(2 * ind + 1, low, mid, i, val);
  		else update(2 * ind + 2, mid + 1, high, i, val);
- 		seg[ind] = Merger(seg[2 * ind + 1], seg[2 * ind + 2]);
+         seg[ind] = Merger(seg[2 * ind + 1], seg[2 * ind + 2]);
+
  	}
  };
 
