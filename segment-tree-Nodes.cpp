@@ -15,6 +15,7 @@ using namespace std;
 #define rloop(n) for(long long int j = n-1; j>0; j--)
 
 using namespace std;
+
 class Info {
 public:
     int open,close,full;
